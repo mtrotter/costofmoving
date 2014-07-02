@@ -1,0 +1,11 @@
+$def with (old_life, new_life, country, change)
+<html>
+<font face="Helvetica">
+<p> Right now you have about $round(old_life,2) years left</p>
+<p> If you move to $country.capitalize(), you will live about $round(new_life,2) more years.</p>
+$if change>0:
+	<p> If you move now, your lifespan will increase by $round(change,2) years!</p>
+$else: 
+	<p> Dude, are you sure? If you move there, your remaining life expectancy will drop by $round(change,2) years!</p>
+</font>
+</html>
